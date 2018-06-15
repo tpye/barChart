@@ -1,10 +1,14 @@
 .chart{
-    height: 100vh;
-    width: 70vw;
+    height: 500px;
+    width: 500px;
     display:grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(100,1fr);
     grid-column-gap: 5px;
+    border-bottom: black;
+    border-style: none none solid solid;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 * {box-sizing: border-box;}
@@ -40,3 +44,51 @@ html, body {
   [class*="bar"]:nth-child(even) {
     background-color: #0074d9;
   }
+
+.bar-1{
+    grid-row-start: 50;
+}
+
+.bar-2{
+    grid-row-start: 30;
+}
+
+.bar-3{
+    grid-row-start: 90;
+}
+
+.bar-4{
+    grid-row-start: 10;
+}
+
+.bar-5{
+    grid-row-start: 15;
+}
+
+.bar-6{
+    grid-row-start: 36;
+}
+
+.bar-7{
+    grid-row-start: 10;
+}
+
+.bar-8{
+    grid-row-start: 86;
+}
+
+.bar-9{
+    grid-row-start: 74;
+}
+
+.bar-10{
+    grid-row-start: 61;
+}
+
+.bar-11{
+    grid-row-start: 28;
+}
+
+.bar-12{
+    grid-row-start: 95;
+}
