@@ -1,0 +1,42 @@
+.chart{
+    height: 100vh;
+    width: 70vw;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(100,1fr);
+    grid-column-gap: 5px;
+}
+
+* {box-sizing: border-box;}
+
+html, body {
+    margin: 0;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+[class*="bar"]{
+    grid-row-start: 1;
+    grid-row-end: 101;
+    border-radius: 5px 5px 0 0;
+    background-color: #ff4136;
+}
+
+/*@mixin chartValue($data){
+    $totalRows: 101;
+    $result: $totalRows - $data;
+    grid-row-start: $result;
+}
+
+.bar-1{
+    @include charValue(20);
+}
+*/
+[class*="bar"]:nth-child(odd) {
+    background-color: #ff4136; 
+  }
+
+  [class*="bar"]:nth-child(even) {
+    background-color: #0074d9;
+  }
